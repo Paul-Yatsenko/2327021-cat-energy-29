@@ -70,7 +70,7 @@
                     <source media="(min-width: 768px)"
                     srcset="./img/card-pro500chick-tablet@1x.png 1x, ./img/card-pro500chick-tablet@2x.png 2x"
                     width="168" height="200">
-                    <img src="./img/card-pro500chick-mobile@1x.png"
+                    <img class="card__img-fixerror" src="./img/card-pro500chick-mobile@1x.png"
                     srcset="./img/card-pro500chick-mobile@2x.png 2x"
                     alt="фото товара" width="68" height="86" class="card__img" loading="lazy">
                   </picture>
@@ -99,7 +99,7 @@
                     <source media="(min-width: 768px)"
                     srcset="./img/card-pro1000chick-tablet@1x.png 1x, ./img/card-pro1000chick-tablet@2x.png 2x"
                     width="168" height="200">
-                    <img src="./img/card-pro1000chick-mobile@1x.png"
+                    <img class="card__img-fixerror" src="./img/card-pro1000chick-mobile@1x.png"
                     srcset="./img/card-pro1000chick-mobile@2x.png 2x"
                     alt="фото товара" width="84" height="100" class="card__img" loading="lazy">
                   </picture>
@@ -263,8 +263,8 @@
               </div>
               <button class="card__button button primary-button">заказать</button>
             </li>
-            <li class="catalog__products-item card catalog-add-card">
-              <div class="card__info-wrapper card__info-wrapper-add">
+            <li class="catalog__products-item catalog__products-item--add card">
+              <div class="card__wrapper card__wrapper--add">
                 <h2 class="card__title card__title-row">Показать еще 100500 товаров</h2>
                 <p class="card__description-add">На самом деле вкусов гораздо больше!</p>
               </div>
