@@ -26,12 +26,31 @@
 .form__contacts-user-label {
   .form-text();
   margin-right: 13px;
+  min-width: max-content;
+}
+
+.form__contacts-icon-wrapper {
+  display: flex;
+  align-items: baseline;
+  position: relative;
+  width: 100%;
+}
+
+.form__contacts-icon-wrapper--mail::before {
+  content: "";
+  display: block;
+  mask-image: url("../img/icons/stack-sprite.svg#icon-mail");
+  background-size: 27px 34px;
+  width: 27px;
+  height: 34px;
+  position: absolute;
+  background-color: @dark-gray;
 }
 
 .form__contacts-user-input {
   .form-text();
-  padding: 14px 15px 13px;
-  border: 1px @border-gray solid;
+  padding: 14px 35px 13px 15px;
+  border: 1px @input-gray solid;
   width: 100%;
 
   &::placeholder {
@@ -53,23 +72,16 @@
   //}
 }
 
+.form__contacts-user-input::-webkit-outer-spin-button {
+  appearance: none;
+}
+
+.form__contacts-user-input::-webkit-inner-spin-button {
+  appearance: none;
+}
+
 .form__contacts-user-input[type="number"] {
   appearance: textfield;
-  background-image: url("../img/icons/icon-phone.svg");
-  background-size: 20px 20px;
-  background-repeat: no-repeat;
-  background-position: 95% 50%;
-}
-
-.form__contacts-user-input[type="email"] {
-  background-image: url("../img/icons/icon-mail.svg");
-  background-size: 20px 20px;
-  background-repeat: no-repeat;
-  background-position: 95% 50%;
-}
-
-.form__contacts-user-input::-webkit-outer-spin-button .form__contacts-user-input::-webkit-inner-spin-button {
-  appearance: none;
 }
 
 .form__contacts-user-item {
@@ -117,7 +129,7 @@
 
   .form__contacts-user-input {
     .form-text();
-    padding: 11px 20px;
+    padding: 11px 40px 11px 20px;
   }
 
   .form__contacts-user-list {

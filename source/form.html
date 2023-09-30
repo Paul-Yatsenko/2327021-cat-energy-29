@@ -106,12 +106,16 @@
                 <legend class="form__legend legend-contacts">Контактные данные (владельца кота)</legend>
                 <ul class="form__contacts-user-list list-null">
                   <li class="form__contacts-user-item">
-                    <label class="form__contacts-user-label" for="e-mail">E-mail:*</label>
-                    <input class="form__contacts-user-input" type="email" name="e-mail" id="e-mail" placeholder="kuklachev@gmail.com" required>
+                    <div class="form__contacts-icon-wrapper form__contacts-icon-wrapper--mail">
+                      <label class="form__contacts-user-label" for="e-mail">E-mail:*</label>
+                      <input class="form__contacts-user-input form__contacts-user-input--mail" type="email" name="e-mail" id="e-mail" placeholder="kuklachev@gmail.com" required>
+                    </div>
                   </li>
                   <li class="form__contacts-user-item">
-                    <label class="form__contacts-user-label" for="phone">Телефон:*</label>
-                    <input class="form__contacts-user-input" type="number" name="phone" id="phone" placeholder="8 (960) 900-60-90" required>
+                    <div class="form__contacts-icon-wrapper form__contacts-icon-wrapper--phone">
+                      <label class="form__contacts-user-label" for="phone">Телефон:*</label>
+                      <input class="form__contacts-user-input form__contacts-user-input--phone" type="number" name="phone" id="phone" placeholder="8 (960) 900-60-90" required>
+                    </div>
                   </li>
                 </ul>
               </fieldset>

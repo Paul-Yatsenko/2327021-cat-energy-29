@@ -155,7 +155,6 @@
   display: block;
   width: 40px;
   height: 40px;
-  border: none;
   border-radius: 50%;
   transform: translate(-50%, -50%);
   background-color: @white;
@@ -192,9 +191,20 @@
   border-radius: 2px;
 }
 
-.slider__slider-devider-toggle:hover > .slider__toggle-icons {
+.slider__toggle-icons {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  fill: @social-gray;
+}
+
+.slider__devider-wrapper:hover .slider__toggle-icons {
   fill: @primary-green;
 }
+
 
 @media (min-width: @tablet-width) {
   .result {

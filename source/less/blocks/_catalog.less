@@ -9,7 +9,7 @@
 
 .catalog__products-item {
   max-width: 320px;
-  padding: 19px 20px 25px 20px;
+  padding: 20px 20px 25px 20px;
   border-bottom: 1px @hr-gray solid;
 
   &--add {
@@ -34,9 +34,9 @@
 .card__image-wrapper {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   min-width: 140px;
-  min-height: 112px;
+  min-height: 107px;
 }
 
 .card .card__title {
@@ -50,7 +50,7 @@
 }
 
 .card__button {
-  margin-top: 13px;
+  margin-top: 17px;
   min-width: 100%;
 }
 
@@ -121,32 +121,42 @@
     gap: 60px;
   }
 
-  .card__img-fixerror {
-    height: 200px;
-    width: 168px;
+  .card__img {
+    display: block;
   }
 
   .catalog__products-item {
     min-width: 324px;
     min-height: 511px;
-    padding: 8px 37px 39px;
+    padding: 10px 37px 39px;
     border-bottom: none;
-    justify-self: center;
 
     &--add {
-      padding-top: 133px;
+      position: relative;
+      padding-top: 132px;
+
+      &::after {
+        content: "";
+        display: block;
+        border: 2px @light-gray solid;
+        width: 324px;
+        min-height: 429px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+      }
     }
   }
 
   .card:not(:last-child) {
-    background: linear-gradient(360deg, @light-gray 84%, transparent 50%);
+    background: linear-gradient(360deg, @light-gray 83.5%, transparent 50%);
   }
 
   .card__wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 34px;
+    gap: 22px;
 
     &--add {
       gap: 0;
@@ -157,8 +167,8 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    width: 168px;
-    min-height: 200px;
+    width: 200px;
+    min-height: 210px;
   }
 
   .card .card__title {
@@ -170,14 +180,13 @@
   }
 
   .card .card__title-row {
-    font-size: 20px;
-    line-height: 22px;
     max-width: 134px;
+    margin-bottom: 23px;
 
     &::before {
       width: 60px;
       height: 60px;
-      margin-bottom: 49px;
+      margin-bottom: 50px;
       background-repeat: no-repeat;
       background-size: 60px 60px;
     }
@@ -191,13 +200,12 @@
   }
 
   .card__button {
-    margin-top: 33px;
+    margin-top: 32px;
   }
 
   .card .secondary-button {
     background-color: @light-gray;
     color: @primary-black;
-    margin-top: 87px;
   }
 
   .card__info-wrapper {
@@ -215,7 +223,7 @@
 
   .card__info-name {
     font-size: 16px;
-    line-height: 16px;
+    line-height: 20px;
     padding-top: 7px;
     padding-bottom: 9px;
     border-bottom: 1px @border-gray solid;
@@ -223,7 +231,7 @@
 
   .card__info-value {
     font-size: 16px;
-    line-height: 16px;
+    line-height: 20px;
     display: grid;
     justify-content: end;
     padding-top: 7px;
@@ -251,37 +259,67 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 80px;
-    row-gap: 62px;
-    align-items: center;
+    row-gap: 63px;
   }
 
   .catalog__products-item {
     min-width: 245px;
     min-height: 511px;
-    padding: 0 36px 40px;
+    padding: 10px 38px 40px;
     border-bottom: none;
-    justify-self: center;
+
+    &--add {
+      position: relative;
+      padding-top: 132px;
+
+      &::after {
+        content: "";
+        display: block;
+        border: 2px @light-gray solid;
+        width: 245px;
+        min-height: 431px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+      }
+    }
   }
 
   .card__wrapper {
-    gap: 46px;
+    gap: 12px;
+
+    &--add {
+      gap: 0;
+    }
+  }
+
+  .card__info-name {
+    &--dec {
+      padding-bottom: 10px;
+      border-bottom: 1px @border-gray solid;
+    }
+  }
+
+  .card__info-value {
+    &--dec {
+      padding-bottom: 10px;
+      border-bottom: 1px @border-gray solid;
+    }
   }
 
   .card__image-wrapper {
-    width: 172px;
-    min-height: 196px;
+    width: 169px;
+    min-height: 210px;
   }
 
   .card .card__title {
-    line-height: 21px;
-    margin-bottom: 21px;
+    margin-bottom: 17px;
   }
 
   .card .card__title-row {
     &::before {
       width: 60px;
       height: 60px;
-      margin-top: 132px;
       margin-bottom: 49px;
       background-repeat: no-repeat;
       background-size: 60px 60px;
