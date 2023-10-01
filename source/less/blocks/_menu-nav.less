@@ -1,13 +1,3 @@
-
-
-//.main-nav__menu-wrapper {
-//  display: none;
-//
-//  @media (min-width: @tablet-width) {
-//    display: flex;
-//  }
-//}
-
 .main-nav__list {
   position: relative;
   z-index: 1;
@@ -19,12 +9,17 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    gap: 33px;
+    column-gap: 33px;
+    row-gap: 5px;
   }
 
   @media (min-width: @desctop-width) {
     min-width: 480px;
     max-width: 800px;
+
+    &--white-width {
+      max-width: 480px;
+    }
   }
 }
 
@@ -88,15 +83,18 @@
 
   &:hover {
     opacity: 0.6;
-
-    @media (max-width: 767px) {
-      display: flex;
-    }
   }
 
   &:active {
-    opacity: 1;
-    border-bottom: 2px @primary-green solid;
+    opacity: 0.3;
+    //АЛЬТЕРНАТИВНЫЙ ВАРИАНТ (по стайлгайду не совсем понятно, там написано "Main menu down" (с opacity 0.3) и "Main menu active" (тот, что закомментил)
+    //поэтому сначала я сделал active закомменченый, а потом предположил, что диз имел ввиду на клик св-ва "Down", а на active просто визуал как на стр. на которой находимся.
+    //    opacity: 1;
+    //border-bottom: 2px @primary-green solid;
+  }
+
+  @media (max-width: 767px) {
+    display: flex;
   }
 
   @media (min-width: @tablet-width) {
@@ -104,6 +102,10 @@
     line-height: 24px;
     padding: 8px 0;
     justify-content: flex-start;
+
+    &--current {
+      border-bottom: 2px @primary-green solid;
+    }
   }
 
   @media (min-width: @desctop-width) {
@@ -112,10 +114,12 @@
 
     &--white {
       color: @white;
+      border-color: @white;
 
-      &:active {
-        border-bottom: 2px @white solid;
-      }
+      //также альтернативный вариант на ввсякий случай, в зависимости от того, чего хотел дизайнер.
+      //&:active {
+      //  border-bottom: 2px @white solid;
+      //}
     }
   }
 }
