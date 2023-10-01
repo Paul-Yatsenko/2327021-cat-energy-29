@@ -1,5 +1,5 @@
 .sub-catalog {
-  padding: 25px 0 35px 0;
+  padding: 21px 0 35px 0;
 }
 
 .sub-catalog__title {
@@ -57,10 +57,11 @@
 .sub-catalog__text-wrapper {
   display: flex;
   justify-content: space-between;
+  line-height: 14px;
 }
 
 .sub-catalog__button {
-  margin-top: 15px;
+  margin-top: 14px;
   min-width: 100%;
 }
 
@@ -74,6 +75,7 @@
   background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog-background-cat@x1.png"), linear-gradient(rgb(76, 74, 79), rgb(76, 74, 79));
   background-size: cover;
   background-repeat: no-repeat;
+  margin-top: 34px;
 
   @media (min-resolution: 2dppx) {
     background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog-background-cat@x2.png"), linear-gradient(rgb(76, 74, 79), rgb(76, 74, 79));
@@ -105,7 +107,7 @@
 
 @media (min-width: @tablet-width) {
   .sub-catalog {
-    padding: 68px 30px 76px;
+    padding: 70px 30px 76px;
   }
 
   .sub-catalog__title {
@@ -146,7 +148,7 @@
   }
 
   .sub-catalog__item:not(:last-child) {
-    padding: 26px 28px 38px;
+    padding: 26px 35px 28px;
     border-left: 1px @border-gray solid;
     border-right: 1px @border-gray solid;
     display: grid;
@@ -160,7 +162,7 @@
   }
 
   .sub-catalog__button {
-    margin-top: 25px;
+    margin-top: 24px;
     grid-column: 1/3;
   }
 
@@ -261,7 +263,7 @@
   }
 
   .sub-catalog__item:not(:last-child) {
-    padding: 15px 0 17px 0;
+    padding: 15px 0 16px 0;
     border-bottom: 1px @border-gray solid;
     border-right: none;
     border-left: none;

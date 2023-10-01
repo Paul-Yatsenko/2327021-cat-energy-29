@@ -27,6 +27,10 @@
   }
 }
 
+.work-plan__decor {
+  display: none;
+}
+
 .work-plan__item--decor1 {
   &::before {
     background-image: url("../img/icons/icon-workplan-dec1-30x32px.svg");
@@ -69,7 +73,7 @@
 
 @media (min-width: @tablet-width) {
   .work-plan {
-    padding: 15px 30px 47px;
+    padding: 15px 30px 33px;
   }
 
   .work-plan__title {
@@ -81,13 +85,14 @@
   .work-plan__description {
     font-size: 16px;
     line-height: 24px;
+    z-index: 1;
   }
 
   .work-plan__list {
     display: grid;
     grid-template-columns: 230px 230px;
-    column-gap: 187px;
-    row-gap: 90px;
+    column-gap: 154px;
+    row-gap: 133px;
     margin-bottom: 70px;
   }
 
@@ -95,6 +100,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    position: relative;
 
     &::before {
       width: 80px;
@@ -106,6 +112,19 @@
 
   .work-plan__item:not(:last-child) {
     margin-bottom: 0;
+  }
+
+  .work-plan__decor {
+    display: block;
+    .text-null();
+    .title();
+    font-size: 280px;
+    line-height: 280px;
+    position: absolute;
+    color: @light-gray;
+    left: 111px;
+    top: -40px;
+    z-index: 0;
   }
 }
 

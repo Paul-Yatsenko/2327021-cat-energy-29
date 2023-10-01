@@ -50,7 +50,7 @@
 }
 
 .card__button {
-  margin-top: 17px;
+  margin-top: 7px;
   min-width: 100%;
 }
 
@@ -102,13 +102,13 @@
 
 @media (min-width: @tablet-width) {
   .catalog {
-    padding: 40px 30px 0;
+    padding: 36px 30px 0;
   }
 
   .catalog__title {
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 42px;
+    margin-bottom: 84px;
     padding: 0;
     border-top: none;
     border-bottom: none;
@@ -140,7 +140,7 @@
         display: block;
         border: 2px @light-gray solid;
         width: 324px;
-        min-height: 433px;
+        min-height: 429px;
         position: absolute;
         left: 0;
         bottom: 0;
@@ -149,7 +149,7 @@
   }
 
   .card:not(:last-child) {
-    background: linear-gradient(360deg, @light-gray 82%, transparent 50%);
+    background: linear-gradient(360deg, @light-gray 84%, transparent 50%);
   }
 
   .card__wrapper {
@@ -175,7 +175,7 @@
     font-size: 20px;
     line-height: 24px;
     max-width: 154px;
-    margin-bottom: 14px;
+    margin-bottom: 0;
     text-align: center;
   }
 
@@ -200,7 +200,7 @@
   }
 
   .card__button {
-    margin-top: 32px;
+    margin-top: 20px;
   }
 
   .card .secondary-button {
@@ -224,8 +224,8 @@
   .card__info-name {
     font-size: 16px;
     line-height: 20px;
-    padding-top: 7px;
-    padding-bottom: 9px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     border-bottom: 1px @border-gray solid;
   }
 
@@ -234,15 +234,15 @@
     line-height: 20px;
     display: grid;
     justify-content: end;
-    padding-top: 7px;
-    padding-bottom: 9px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     border-bottom: 1px @border-gray solid;
   }
 }
 
 @media (min-width: @desctop-width) {
   .catalog {
-    padding: 40px 110px 0;
+    padding: 18px 110px 0;
   }
 
   .catalog__title {
@@ -293,7 +293,14 @@
     }
   }
 
+  .card__button {
+    margin-top: 17px;
+  }
+
   .card__info-name {
+    padding-top: 6px;
+    padding-bottom: 5px;
+
     &--dec {
       padding-bottom: 10px;
       border-bottom: 1px @border-gray solid;
@@ -301,6 +308,9 @@
   }
 
   .card__info-value {
+    padding-top: 6px;
+    padding-bottom: 5px;
+
     &--dec {
       padding-bottom: 10px;
       border-bottom: 1px @border-gray solid;
@@ -313,14 +323,16 @@
   }
 
   .card .card__title {
-    margin-bottom: 17px;
+    margin-bottom: 4px;
   }
 
   .card .card__title-row {
+    margin-bottom: 27px;
+
     &::before {
       width: 60px;
       height: 60px;
-      margin-bottom: 49px;
+      margin-bottom: 37px;
       background-repeat: no-repeat;
       background-size: 60px 60px;
     }

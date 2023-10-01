@@ -88,10 +88,12 @@
 
 .result__cost-text {
   text-align: center;
+  .text-null();
   .title();
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .slider {
@@ -281,14 +283,15 @@
     font-size: 20px;
     line-height: 28px;
     max-width: 175px;
+    padding-top: 8px;
   }
 }
 
 @media (min-width: @desctop-width) {
   .result {
-    padding: 0 110px 75px;
+    padding: 56px 110px 52px;
     border-top: none;
-    background: linear-gradient(360deg, @light-gray 80%, transparent 50%);
+    background: linear-gradient(360deg, @light-gray 71%, transparent 50%);
   }
 
   .result__title {
@@ -298,7 +301,7 @@
 
   .result__description {
     max-width: 436px;
-    margin-bottom: 55px;
+    margin-bottom: 67px;
   }
 
   .result__wrapper {
@@ -316,14 +319,15 @@
   .result__cost-text {
     text-align: left;
     max-width: 410px;
+    padding-top: 0;
   }
 
   .result__right-wrapper {
-    margin-bottom: 60px;
+    margin-bottom: 58px;
   }
 
   .result__left-wrapper {
-    margin-bottom: 60px;
+    margin-bottom: 58px;
   }
 
   .result__right-wrapper dd {
