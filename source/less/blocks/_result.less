@@ -207,6 +207,10 @@
   fill: @primary-green;
 }
 
+.result__description br {
+  display: none;
+}
+
 
 @media (min-width: @tablet-width) {
   .result {
@@ -285,6 +289,10 @@
     max-width: 175px;
     padding-top: 8px;
   }
+
+  .result__description br {
+    display: none;
+  }
 }
 
 @media (min-width: @desctop-width) {
@@ -336,5 +344,9 @@
 
   .result__left-wrapper dd {
     background-color: @light-gray;
+  }
+
+  .result__description br {
+    display: block;
   }
 }

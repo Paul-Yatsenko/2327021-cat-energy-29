@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" crossorigin>
     <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" crossorigin>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>Кэт энерджи</title>
-    <link rel="icon" href="/source/favicon.svg">
+    <link rel="icon" href="favicon.svg">
   </head>
 
   <body class="page__body">
@@ -17,12 +17,12 @@
           <div class="header-wrapper-basic">
             <a href="index.html" class="main-header__logo logo">
               <picture>
-                <source media="(min-width: 1440px)" srcset="./img/icons/main-logo-desctop.svg">
-                <source media="(min-width: 768px)" srcset="./img/icons/main-logo-tablet.svg">
-                <img class="logo__logo-image" width="33" height="38" src="./img/icons/main-logo.svg" alt="логотип" loading="lazy">
+                <source media="(min-width: 1440px)" srcset="./img/main-logo-desctop.svg">
+                <source media="(min-width: 768px)" srcset="./img/main-logo-tablet.svg">
+                <img class="logo__logo-image" width="33" height="38" src="./img/main-logo.svg" alt="логотип" loading="lazy">
               </picture>
               <svg class="logo__logo-text logo-text logo-center" width="101" height="18">
-                <use xlink:href="./img/icons/sprite.svg#main-logo-text"></use>
+                <use xlink:href="img/sprite.svg#main-logo-text"></use>
               </svg>
             </a>
               <button class="header-toggle" type="button">
@@ -189,7 +189,7 @@
                 <span class="visually-hidden">кнопка перемещения слайдера.</span>
                 <button class="slider__slider-devider-toggle" type="button">
                   <svg class="slider__toggle-icons" width="24" height="18">
-                    <use xlink:href="./img/icons/sprite.svg#icon-slider"></use>
+                    <use xlink:href="./img/sprite.svg#icon-slider1"></use>
                   </svg>
                 </button>
                 <div class="divider-line"></div>
@@ -216,9 +216,9 @@
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
             <picture>
-              <source media="(min-width: 1440px)" srcset="../img/map-icon-tablet.png" width="113" height="106">
-              <source media="(min-width: 768px)" srcset="../img/map-icon-tablet.png" width="113" height="106">
-              <img class="contacts__map-point contacts__map-point--nojs" src="../img/map-icon.png" width="57" height="53"
+              <source media="(min-width: 1440px)" srcset="./img/map-icon-tablet.png" width="113" height="106">
+              <source media="(min-width: 768px)" srcset="./img/map-icon-tablet.png" width="113" height="106">
+              <img class="contacts__map-point contacts__map-point--nojs" src="./img/map-icon.png" width="57" height="53"
                 alt="точка местоположения на карте">
             </picture>
           </div>
@@ -230,7 +230,7 @@
           <h2 class="visually-hidden">логотип компании.</h2>
           <a href="index.html" class="footer__page-link">
             <svg class="footer__logo footer__logo-text logo-text" width="128" height="24">
-              <use xlink:href="./img/icons/sprite.svg#main-logo-text"></use>
+              <use xlink:href="./img/sprite.svg#main-logo-text"></use>
             </svg>
           </a>
           <hr>
@@ -239,21 +239,21 @@
             <li class="social-list__item">
               <a href="#no-scroll" class="social-list__link">
                 <svg class="social-icon" width="28" height="22">
-                  <use xlink:href="./img/icons/sprite.svg#vkontakte"></use>
+                  <use xlink:href="./img/sprite.svg#vkontakte"></use>
                 </svg>
               </a>
             </li>
             <li class="social-list__item">
               <a href="#no-scroll" class="social-list__link">
                 <svg class="social-icon" width="28" height="22">
-                  <use xlink:href="./img/icons/sprite.svg#youtube"></use>
+                  <use xlink:href="./img/sprite.svg#youtube"></use>
                 </svg>
               </a>
             </li>
             <li class="social-list__item">
               <a href="#no-scroll" class="social-list__link">
                 <svg class="social-icon" width="28" height="22">
-                  <use xlink:href="./img/icons/sprite.svg#telegram"></use>
+                  <use xlink:href="./img/sprite.svg#telegram"></use>
                 </svg>
               </a>
             </li>
@@ -266,12 +266,12 @@
                 >
               <p class="footer__academy-text">HTML Academy</p>
               <svg class="icon academy-logo" width="27" height="34">
-              <use xlink:href="./img/icons/sprite.svg#academy-logo"></use></svg>
+              <use xlink:href="./img/sprite.svg#academy-logo"></use></svg>
             </div>
           </a>
         </div>
       </footer>
     </div>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
